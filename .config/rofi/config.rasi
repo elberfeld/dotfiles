@@ -1,0 +1,18 @@
+
+/**
+ * Theme-Configs from https://github.com/adi1090x/rofi
+ */
+
+configuration {
+	modes: "combi,drun,run,ssh";
+        font: "Iosevka Nerd Font 10";
+	show-icons: true;
+	combi-modes: "drun,ssh";
+        display-drun:               "";
+        drun-display-format:        "{name}";
+
+}
+
+@import "colors-solarized.rasi"
+@import "theme-type-1-style-5.rasi"
+
