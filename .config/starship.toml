@@ -1,9 +1,9 @@
 
-# Disable the blank line at the start of the prompt
-add_newline = false
+# blank line at the start of the prompt
+add_newline = true
 
 # Use custom format
-format = '[┌](bold green)$all'
+format = '$all'
 
 
 [aws]
@@ -16,15 +16,13 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol($version(-$name))]($style)\]'
 
 [character]
-format = '[└](bold green)$symbol'
-success_symbol = ''
-error_symbol = '[✗](bold red)'
+format = ''
 
 [cmake]
 format = '\[[$symbol($version)]($style)\]'
 
 [cmd_duration]
-format = '\[[⏱ $duration]($style)\]'
+format = '\[[$duration]($style)\]'
 
 [cobol]
 format = '\[[$symbol($version)]($style)\]'
@@ -159,6 +157,14 @@ format = '\[[$symbol$environment]($style)\]'
 [sudo]
 format = '\[[as $symbol]\]'
 
+[status]
+style = 'bg:blue'
+symbol = '🔴 '
+success_symbol = '🟢 SUCCESS'
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+disabled = false
+
 [swift]
 format = '\[[$symbol($version)]($style)\]'
 
@@ -167,6 +173,7 @@ format = '\[[$symbol$workspace]($style)\]'
 
 [time]
 format = '\[[$time]($style)\]'
+use_12hr = false
 disabled = true
 
 [username]
