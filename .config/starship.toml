@@ -1,6 +1,10 @@
 
+# Disable the blank line at the start of the prompt
+add_newline = false
+
 # Use custom format
 format = '[┌](bold green)$all'
+
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
@@ -12,7 +16,9 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol($version(-$name))]($style)\]'
 
 [character]
-format = '[└](bold green)$symbol '
+format = '[└](bold green)$symbol'
+success_symbol = ''
+error_symbol = '[✗](bold red)'
 
 [cmake]
 format = '\[[$symbol($version)]($style)\]'
@@ -161,6 +167,7 @@ format = '\[[$symbol$workspace]($style)\]'
 
 [time]
 format = '\[[$time]($style)\]'
+disabled = true
 
 [username]
 format = '[$user]($style)'
