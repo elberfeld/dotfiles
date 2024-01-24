@@ -23,6 +23,7 @@ format = '\[[$symbol($version)]($style)\]'
 
 [cmd_duration]
 format = '\[[$duration]($style)\]'
+min_time = 1
 
 [cobol]
 format = '\[[$symbol($version)]($style)\]'
@@ -158,7 +159,7 @@ format = '\[[$symbol$environment]($style)\]'
 format = '\[[as $symbol]\]'
 
 [status]
-style = 'bg:blue'
+style = 'green'
 symbol = '🔴 '
 success_symbol = '🟢 SUCCESS'
 format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
